@@ -189,7 +189,7 @@
         //Validações do Modal
         //validação do nome
         if (nome.value.length < 3 || isNaN(nome.value) == false) { //tamanho minimo 3 ou isNaN = false pra evitar numeros
-            alert("Informe um nome completo !");
+            alert("Informe o nome completo !");
             nome.focus(); // foca no campo com id nome
             return false;
         }
@@ -201,7 +201,7 @@
             usuario.value.lastIndexOf(".") <= usuario.value.indexOf("@") || // se a posição do ponto for <= a posição do @
             usuario.value.lastIndexOf(".") == (usuario.value.length - 1)
         ) {
-            alert("Informe um email valido");
+            alert("Informe um email válido");
             usuario.focus(); // foca no campo com id email
             return false;
         }
